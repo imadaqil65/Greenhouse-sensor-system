@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Greenhouse database</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">!-->
+        <meta http-equiv="refresh" content="5">
+    </head>
+    <body>
+
+        <div class ="content">
+            <h1>Reading time<br> {{ date_time }} </h1>
+                
+                <ul class="normal">
+                <div class="temp">
+                    <li>Temperature <br> {{ tem }}°C</li>
+                </div>
+                <div class="humi">
+                    <li>Humidity <br> {{ hum }}%</li>
+                </div>
+                <div class="light">
+                    <li>Light Level <br> {{ lig }}W/m²</li>
+                </ul>
+
+                <ul class="temper">
+                    <div class="">
+                        <li>Average Temperature <br> {{ avgtem }}°C</li>
+                    </div>
+                    <div class="">
+                        <li>Max Temperature <br> {{ maxtem }}°C</li>
+                    </div>
+                    <div class="">
+                        <li>Min Temperature <br> {{ mintem }}°C</li>
+                </ul>
+
+                <ul class="humid">
+                    <div class="">
+                        <li>Average Humidity <br> {{ avghum }}%</li>
+                    </div>
+                    <div class="">
+                        <li>Max Humidity <br> {{ maxhum }}%</li>
+                    </div>
+                    <div class="">
+                        <li>Min Humidity <br> {{ minhum }}%</li>
+                </ul>
+                
+                <ul class="liglev">
+                    <div class="">
+                        <li>Average Light <br> {{ avglig }}W/m²</li>
+                    </div>
+                    <div class="">
+                        <li>Max Light <br> {{ maxlig }}W/m²</li>
+                    </div>
+                    <div class="">
+                        <li>Min Light <br> {{ minlig }}W/m²</li>
+                </ul>
+        </div>
+    </body>
+</html>
